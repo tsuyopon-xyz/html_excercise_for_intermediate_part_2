@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>【エクササイズ】HTMLのフォーム作成の復習</title>
+</head>
+<body>
+  <h1>フォームレッスン</h1>
+  <p>以下のフォームを埋めてください。（※は必須項目）</p>
+    <form action="">
+    <div>
+        <label for="username">ユーザー名: </label>
+        <input id="username"type="text" required>     
+    </div>
+    <div>
+        <label for="password">パスワード(6文字以上):</label>
+        <input type="password"
+        required
+        minlength="6"
+        id="password">        
+    </div>
+    <div>
+        ※性別:
+        <input type="radio" id="women" name="gender" value="female" required >
+        <label for="women">女性</label>
+        <input type="radio" name="gender" id="man" required value="male">
+        <label for="man">男性</label>        
+    </div>
+    <div>
+        ※生年月日:
+        <label for="year">年:</label>
+            <select name="year" id="year" required>
+                <option value="">---</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="12">12</option>
+            </select>
+        <label for="month">月:</label>
+            <select name="month" id="month" required>
+                <option value="">---</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="12">12</option>
+            </select>
+        <label for="day">日:</label>        
+            <select name="day" id="day" required>
+                <option value="">---</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="31">31</option>
+            </select>        
+    </div>
+    <div>
+        <label for="textbox">備考欄:</label>      
+        <div>
+            <textarea name="text" id="textbox" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+</form>
+</body>
+</html>
