@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>フォームレッスン</h1>
+    <p>以下のフォームを埋めてください。（※は必須項目）</p>
+    <form action="" method="POST">
+        <div>
+            <label>
+                ※ユーザー名：<input type="text" name="username" id="username" required>
+            </label>
+        </div>
+        <div>
+            <label>
+                ※パスワード（6文字以上）：<input type="password" name="password" minlength="6" required>
+            </label>
+        </div>
+        <div>
+            ※性別：
+            <input type="radio" name="gender" id="female" required>
+            <label for="female">女性</label>
+            <input type="radio" name="gender" id="male">
+            <label for="male">男性</label>
+        </div>
+        <div>
+            ※生年月日：
+            <label for="year">年：</label>
+            <select name="year" id="year" required>
+                <option value="">---</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+            </select>
+            <label for="month"">月：</label>
+            <select name=" month" id="month" required>
+                <option value="">---</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="12">12</option>
+            </select>
+            <label for="day">日：</label>
+            <select name="day" id="day" required>
+                <option value="">---</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="31">31</option>
+            </select>
+        </div>
+        <label for="notes">備考欄：</label>
+        <div>
+            <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="送信">
+        </div>
+    </form>
+</body>
+
+</html>
